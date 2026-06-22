@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.ar.edu.unlam.data.model.InstitucionCarcelaria;
+
 public class InstitucionCarcelariaTest {
 
 	@Before
@@ -13,7 +15,13 @@ public class InstitucionCarcelariaTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		//GIVEN
+	String nombre = "El silencio";
+		//WHEN
+	InstitucionCarcelaria ic = new InstitucionCarcelaria(nombre);
+		//THEN
+		assertNotNull(ic);
 	}
+
 
 }
